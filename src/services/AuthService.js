@@ -29,7 +29,7 @@ class AuthService extends Service {
     }
 
     // retorna o token com id, secret e tempo que expira
-    const token = jwt.sign({ id: user.id }, secret, { expiresIn: '1m' })
+    const token = jwt.sign({ id: user.id }, secret, { expiresIn: '1d' })
 
     return { token }
   }

@@ -1,8 +1,7 @@
-// src/routes/index.js
-import publicRoute from './public.js';
-import authRoutes from './auth.js'
+import publicRoutes from './public.js'
+import privateRoutes from './private.js'
 
 export default (app) => {
-  app.use('/', publicRoute)
-  app.use('/auth', authRoutes)
-};
+  app.use('/auth', publicRoutes)
+  app.use('/api', privateRoutes)
+}

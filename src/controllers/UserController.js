@@ -1,6 +1,6 @@
 // src/controllers/UserController.js
 import Controller from './Controller.js'
-import userService from '../services/userService.js'
+import userService from '../services/UserService.js'
 
 class UserController extends Controller {
   constructor() {

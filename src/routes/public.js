@@ -1,10 +1,8 @@
-// src/routes/public.js
-import express from 'express'
-import userController from '../controllers/UserController.js'
+import { Router } from 'express'
+import AuthController from '../controllers/AuthController.js'
 
-const router = express.Router()
+const router = Router()
 
-// Cadastro
-router.post('/cadastro', userController.create)
+router.post('/login', AuthController.login)
 
 export default router
